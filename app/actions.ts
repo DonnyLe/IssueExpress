@@ -16,7 +16,6 @@ async function signInWithGithub() {
     provider: "github",
     options: {
       redirectTo: `${defaultUrl}/auth/callback`,
-      scopes: "repo project",
     },
   });
   return { data, error };
